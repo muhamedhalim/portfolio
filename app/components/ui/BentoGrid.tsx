@@ -1,7 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
 import { IoCopyOutline } from "react-icons/io5";
-import ReactLottie from "react-lottie";
 import { cn } from "@/untils/cn";
 import { BackgroundGradientAnimation } from "./GradientBg";
 import { GlobeDemo } from "./GridGlobe";
@@ -29,7 +28,7 @@ export default function LottieAnimation() {
     },
   };
 
-  return <ReactLottie options={defaultOptions} height={300} width={300} />;
+  return <Lottie options={defaultOptions} height={300} width={300} />;
 }
 
 export const BentoGrid = ({
@@ -88,7 +87,7 @@ export const BentoGridItem = ({
     const text = "mohamedhalemm40@gmail.com";
     navigator.clipboard.writeText(text);
     setCopied(true);
-    setTimeout(() => setCopied(false), 3000); // إعادة الحالة إلى false بعد 3 ثوانٍ
+    setTimeout(() => setCopied(false), 3000); 
   };
 
   return (
