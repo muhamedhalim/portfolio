@@ -7,6 +7,7 @@ import { GlobeDemo } from "./GridGlobe";
 import animationData from "@/data/confetti.json";
 import MagicButton from "../ui/magicButton";
 import dynamic from "next/dynamic";
+import Img from "next/image";
 
 const Lottie = dynamic(() => import("react-lottie"), { ssr: false });
 
@@ -105,7 +106,7 @@ export const BentoGridItem = ({
       <div className={`${id === 6 && "flex justify-center"} h-full`}>
         <div className="w-full h-full absolute">
           {img && (
-            <img
+            <Img
               src={img}
               alt={img}
               className={cn(imgClassName, "object-cover object-center")}
@@ -114,7 +115,7 @@ export const BentoGridItem = ({
         </div>
         <div className={`absolute right-0 -bottom-5 ${id === 5 && "w-full opacity-80"}`}>
           {spareImg && (
-            <img
+            <Img
               src={spareImg}
               alt={spareImg}
               className="object-cover object-center w-full h-full"

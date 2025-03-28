@@ -2,6 +2,7 @@
 
 import { cn } from "@/untils/cn";
 import React, { useEffect, useState } from "react";
+import Img from "next/image";
 
 export const InfiniteMovingCards = ({
   items,
@@ -28,7 +29,7 @@ export const InfiniteMovingCards = ({
     if (items.length > 0) {
       addAnimation();
     }
-  }, [items]); // تشغيل الأنيميشن عند تغيير items
+  }, [items]); 
 
   function addAnimation() {
     if (!start && containerRef.current && scrollerRef.current) {
@@ -96,7 +97,7 @@ export const InfiniteMovingCards = ({
               </span>
               <div className="relative z-20 mt-6 flex flex-row items-center">
                 <div className="me-3">
-                  <img src="/profile.svg" alt="Profile" />
+                  <Img src="/profile.svg" alt="Profile" />
                 </div>
                 <span className="flex flex-col gap-1">
                   <span className="text-xl font-bold leading-[1.6] text-white">

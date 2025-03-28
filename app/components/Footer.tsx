@@ -2,14 +2,14 @@ import { FaLocationArrow } from "react-icons/fa6";
 
 import { socialMedia } from "@/data";
 import MagicButton from "../components/ui/magicButton";
-
+import Img from "next/image";
 const Footer = () => {
   return (
     <section id="contact">
     <footer className="relative w-full pt-24 pb-12 bg-gradient-to-b from-[#0f0f1a] to-[#06060d] text-white overflow-hidden">
       {/* Background Grid */}
       <div className="absolute left-0 -bottom-40 w-full opacity-30 pointer-events-none">
-        <img src="/footer-grid.svg" alt="Grid" className="w-full h-full" />
+        <Img src="/footer-grid.svg" alt="Grid" className="w-full h-full" />
       </div>
 
       {/* Content Section */}
@@ -48,7 +48,7 @@ const Footer = () => {
               rel="noopener noreferrer"
               className="w-12 h-12 flex justify-center items-center bg-white/10 rounded-xl border border-white/20 transition-all duration-300 hover:bg-purple-600 hover:scale-110 shadow-md"
             >
-              <img src={info.img} alt={info.name} width={24} height={24} />
+              <Img src={info.img} alt={info.name} width={24} height={24} />
             </a>
           ))}
         </div>

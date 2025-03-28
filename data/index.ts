@@ -203,21 +203,25 @@ export const navItems = [
     {
       id: 1,
       img: "/git.svg",
-      link: "https://github.com/muhamedhalim"
+      link: "https://github.com/muhamedhalim",
+      name: 'github'
     },
     {
       id: 2,
       img: "/insta.svg",
-       link: "https://www.instagram.com/mabdalhalim2002/"
+       link: "https://www.instagram.com/mabdalhalim2002/",
+        name: 'instagram'
     },
     {
       id: 3,
       img: "/link.svg",
-       link: "https://www.linkedin.com/in/mohamed-halem-3875242b5/"
+       link: "https://www.linkedin.com/in/mohamed-halem-3875242b5/",
+        name: 'linkedin'
     },
     {
       id: 4,
       img: "/what__2.png",
-       link: "https://wa.me/201114922929"
+       link: "https://wa.me/201114922929",
+        name: 'whatsapp'
     },
   ];

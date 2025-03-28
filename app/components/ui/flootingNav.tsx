@@ -5,6 +5,7 @@ import MagicButton from "../ui/magicButton";
 import { Spotlight } from "../ui/spotlight";
 import { TextGenerateEffect } from "../ui/textGenerate";
 import { socialMedia } from "@/data";
+import Img from "next/image";
 
 const Hero = () => {
   return (
@@ -45,7 +46,7 @@ const Hero = () => {
                 rel="noopener noreferrer"
                 className="w-12 h-12 mt-10 flex justify-center items-center bg-white/10 rounded-xl border border-white/20 transition-all duration-300 hover:bg-purple-600 hover:scale-110 shadow-md"
               >
-                <img src={info.img} alt={info.name} width={24} height={24} />
+                <Img src={info.img} alt={info.name} width={24} height={24} />
               </a>
             ))}
           </div>
